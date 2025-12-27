@@ -164,7 +164,8 @@
 }
 
 
-.shelf-vegetables__block-text {
+.shelf-vegetables__section-block {
+    /* position: relative; */
 	width: 100%;
 	padding: 0;
 }
@@ -177,12 +178,22 @@
 	border-radius: 8px;
 }
 
+.shelf-vegetables__section-step {
+	position: relative;
+    width: 100%;
+    height: 10%;
+	bottom: 0px;
+	left: 0px;
+}
+
 .shelf-vegetables__title {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: #4D4D4D;
 	padding: 0 16px;
+    position: absolute;
+    margin-top: -8px;
 }
 
 .shelf-vegetables__price {
@@ -193,13 +204,10 @@
 	color: #1A1A1A;
 	margin-bottom: -43px;
 	padding: 0 16px;
+    position: absolute;
+    margin-top: 5px;
 }
 
-.shelf-vegetables__button-block {
-	position: relative;
-	bottom: 0px;
-	left: 0px;
-}
 
 [class*=button-circle] {
 	width: 40px;
@@ -207,7 +215,7 @@
 	color: gray;
 	background: url("../img/Container.svg") no-repeat center;
 	position: relative;
-	bottom: 0px;
+	bottom: 10px;
 	left: 242px; 
 }	
 
@@ -218,14 +226,15 @@
 	color: #1A1A1A;;
 	background: url("../img/Bag.svg") no-repeat center;
 	position: relative;
-	bottom: 11px;
+	bottom: 22px;
 	left: 207.5px;
 	cursor: pointer;
 }
 
 .shelf-vegetables__rating {
+    position: absolute;
 	width: 260px;
-	margin-bottom: 0;
+	margin-top: 25px;
 	padding-left: 15px;
 }
 
@@ -287,7 +296,7 @@
 }
 
 .business__wrapper {
-    margin-top: 67px;
+    padding: 67px;
     height: 100%;
     max-width: 600px;
     font-size: 0;
@@ -321,6 +330,7 @@
 .business__picture {
     max-width: 430px;
     height: 548px;
+    object-fit: cover;
    
 }
 
@@ -465,7 +475,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 60px;
+    /* margin-bottom: 0px; */
 }
 
 .button:hover {
